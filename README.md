@@ -1,20 +1,42 @@
-# LPC17xx Embedded C Programs
+# Electronics & Embedded Systems Portfolio
 
-Register-level C programs for the NXP LPC17xx (ARM Cortex-M3) using the `LPC17xx.h` header (Keil µVision style). No libraries are used; GPIO, ADC and UART are configured directly through registers.
+Welcome to my engineering repository! I am a final-year **Electronics & Communication Engineering** student at **PES University** (Class of 2027). This repository acts as a live portfolio showcasing my hands-on experience in **Embedded Systems Firmware**, **Microcontroller Programming (ARM Cortex-M3, PIC, Arduino)**, **RTOS**, and **Communication Protocols**.
 
-## Programs and pin usage
+---
 
-| File | Concept | Pins used |
-|---|---|---|
-| `01_led_blink_single.c` | GPIO output, masked FIOSET/FIOCLR, software delay | LED on P1.29 |
-| `02_led_blink_4bit.c` | Driving a 4-pin group with FIOMASK/FIODIR | LEDs on P0.21–P0.24 |
-| `03_4bit_up_counter.c` | 4-bit binary up counter (0–15) | LEDs on P0.21–P0.24 |
-| `04_lcd_4bit_switch_led.c` | LCD in 4-bit mode, switch input, LED output | Data P0.25–P0.28, RS/RW/EN on P2.11–P2.13, switch P0.0, LED P1.29 |
-| `05_lcd_4bit_switch_display.c` | LCD 4-bit init, cursor control for two lines, switch-driven display | Data P0.21–P0.24, RS/RW/EN on P2.11–P2.13, switch P0.0 |
-| `06_adc_threshold_led.c` | 12-bit ADC read (channel 5, P1.31) and threshold compare | ADC on P1.31, LED on P1.29 |
-| `07_gsm_sms_sender.c` | UART0 init, GSM AT commands (`AT`, `AT+CREG?`, `AT+CMGF=1`, `AT+CMGS`) | TXD0/RXD0 on P0.2/P0.3, switch on P0.21, LED on P1.29 |
+## 🛠️ Technical Skill Summary
+*   **Microcontrollers & Platforms:** ARM Cortex-M3 (LPC1768), PIC, Arduino Mega 2560, ESP8266 (NodeMCU), Raspberry Pi, Intel NUC.
+*   **Protocols & Networking:** UART, SPI, I2C, TCP/IP, Socket Programming, OPC-UA.
+*   **Firmware & Operating Systems:** Embedded C, FreeRTOS (Multi-tasking, concurrent data acquisition), Linux Terminal.
+*   **Software & Data Science:** C, Python (Tkinter, Flask, Pandas, NumPy, Scikit-Learn, Openpyxl).
 
-## Notes
+---
 
-- The phone number in `07_gsm_sms_sender.c` has been replaced with a placeholder (`+91XXXXXXXXXX`).
-- Build with Keil µVision for the LPC17xx and flash to an LPC17xx development board.
+## 📂 Repository Contents & Projects
+
+### 📟 1. Embedded C & Microcontroller Firmware
+A collection of firmware implementations focusing on low-level hardware interfacing, GPIO controls, and peripheral communication:
+*   `01_led_blink_single.c` & `02_led_blink_4bit.c` – Basic GPIO layout, registers configuration, and multi-bit LED controls.
+*   `03_4bit_up_counter.c` – Time-sequenced upward counter logic.
+*   `04_lcd_4bit_switch_led.c` & `05_lcd_4bit_switch_display.c` – User input interfacing with standard character LCDs using 4-bit data optimization.
+*   `06_adc_threshold_led.c` – Reading real-time analog signals via an Analog-to-Digital Converter, handling thresholds, and triggering indicators.
+*   `07_gsm_sms_sender.c` – Low-level UART implementation using AT commands to interface a cellular GSM module for text transmission (Relates to my *GSM-Based Door Open Alert System* using LPC1768).
+
+### 🌐 2. Networking & Device Remote Access Systems
+Comprehensive guides, software setups, and documentation stemming from my training at **Tessolve Semiconductor**:
+*   `01_TCP_Command_Server_on_Raspberry_Pi.pdf` – Establishing device-to-device communication using custom Python socket programming over TCP/IP.
+*   `02_Accessing_Intel_NUC_Screen_from_Raspberry_Pi.pdf` – Comparative architecture and implementation guidelines for headless device control (SSH, RDP, NoMachine).
+*   `03_Serial_Communication_Protocols_UART_SPI_I2C.pdf` – In-depth theoretical and practical analysis of standard industrial serial buses.
+
+---
+
+## 📜 Certifications & Academic Highlights
+Verification of specialized industry workshops, hackathons, and credentials included in this repository:
+*   **QNX Realtime Programming Certification** (Feb 2026) – Real-time operating systems concepts.
+*   **Tessolve Semiconductor Training Certificate** (Summer 2025) – Industrial embedded Linux and remote access systems.
+*   **CHIPS Standard Cell Design Workshop** (PES University / Mar 2025) – VLSI/EDA tool layouts.
+*   **EmbedX 2.0 Hackathon Mentorship** (Feb 2026)
+*   **Regional Space Race Hackathon** (3rd Place Winner).
+
+---
+💡 *Maintained by [@Niharika-47](https://github.com). Looking to connect regarding Graduate Engineer Trainee opportunities!* [1]
