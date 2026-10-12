@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Proprietary / Industrial Raw Logs
+R9_PLC_Final.xlsx
+*.xlsx
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS & Misc User Downloads
+Thumbs.db
+.DS_Store
+*.zip
+Study_and_work_In_Denmark_big.png
+
+# Offline Archive (Preserved locally, excluded from GitHub)
+offline_archive/
