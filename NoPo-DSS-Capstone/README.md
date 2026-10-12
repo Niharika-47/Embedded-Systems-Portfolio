@@ -257,12 +257,11 @@ kan_hipco_model/
 
 ---
 
-## 👥 Authors & Acknowledgments
-* **Lead Developer & Researcher**: Aakshay ([GitHub: @ChAakshay](https://github.com/ChAakshay))
+##Acknowledgments
+
 * **Target Publication Venues**:
   - *IEEE Transactions on Neural Networks and Learning Systems (TNNLS)*
-  - *Computers & Chemical Engineering*
-  - *Nature Communications Engineering*
+
 
 ---
 *⭐ If you find this codebase useful for your research, please give it a star on GitHub!*
