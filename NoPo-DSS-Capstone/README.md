@@ -37,7 +37,7 @@ Built using **Physics-Informed Kolmogorov-Arnold Networks (PI-VRBF-KAN)** couple
 Clone the repository and install the standard dependencies:
 ```bash
 git clone https://github.com/Niharika-47/Embedded-Systems-Portfolio.git
-cd kan_hipco_model
+
 
 # Install required packages
 pip install torch numpy scipy pandas scikit-learn python-pptx
