@@ -1,0 +1,582 @@
+{
+  "timestamp": "2026-09-08T06:32:56Z",
+  "forward_benchmarks": [
+    {
+      "Model": "PI-VRBF-KAN (Ours)",
+      "Mean_R2": 0.961,
+      "Std_R2": 0.02,
+      "R2_Yield": 0.995,
+      "Std_Yield": 0.003,
+      "R2_GD": 0.952,
+      "Std_GD": 0.036,
+      "R2_Purity": 0.958,
+      "Std_Purity": 0.025,
+      "RMSE": 4352.56,
+      "Std_RMSE": 838.34,
+      "MAE": 1636.96,
+      "Std_MAE": 314.72,
+      "Params": 1305,
+      "Latency_us": 7.0,
+      "Physics_Consistency_%": 100.0,
+      "t_stat": 0.0,
+      "p_value": 1.0,
+      "cohens_d": 0.0,
+      "significance": "Reference (Ours)"
+    },
+    {
+      "Model": "Standard PyKAN (Liu 2024)",
+      "Mean_R2": 0.785,
+      "Std_R2": 0.102,
+      "R2_Yield": 0.978,
+      "Std_Yield": 0.013,
+      "R2_GD": 0.713,
+      "Std_GD": 0.151,
+      "R2_Purity": 0.746,
+      "Std_Purity": 0.174,
+      "RMSE": 9886.02,
+      "Std_RMSE": 1766.02,
+      "MAE": 3677.36,
+      "Std_MAE": 733.29,
+      "Params": 2160,
+      "Latency_us": 12.8,
+      "Physics_Consistency_%": 91.2,
+      "t_stat": 10.02,
+      "p_value": 4.766244746028467e-10,
+      "cohens_d": 2.0,
+      "significance": "***"
+    },
+    {
+      "Model": "PINN-MLP (Physics Loss)",
+      "Mean_R2": 0.698,
+      "Std_R2": 0.159,
+      "R2_Yield": 0.965,
+      "Std_Yield": 0.023,
+      "R2_GD": 0.599,
+      "Std_GD": 0.252,
+      "R2_Purity": 0.671,
+      "Std_Purity": 0.238,
+      "RMSE": 11770.45,
+      "Std_RMSE": 2094.26,
+      "MAE": 4370.68,
+      "Std_MAE": 900.94,
+      "Params": 3593,
+      "Latency_us": 5.0,
+      "Physics_Consistency_%": 94.5,
+      "t_stat": 9.32,
+      "p_value": 1.902981521504004e-09,
+      "cohens_d": 1.86,
+      "significance": "***"
+    },
+    {
+      "Model": "Standard MLP (Deep Net)",
+      "Mean_R2": 0.487,
+      "Std_R2": 0.221,
+      "R2_Yield": 0.885,
+      "Std_Yield": 0.169,
+      "R2_GD": 0.693,
+      "Std_GD": 0.124,
+      "R2_Purity": 0.833,
+      "Std_Purity": 0.131,
+      "RMSE": 21847.93,
+      "Std_RMSE": 7973.54,
+      "MAE": 7845.23,
+      "Std_MAE": 2303.53,
+      "Params": 3593,
+      "Latency_us": 7.2,
+      "Physics_Consistency_%": 76.4,
+      "t_stat": 11.44,
+      "p_value": 3.33423201034294e-11,
+      "cohens_d": 2.29,
+      "significance": "***"
+    },
+    {
+      "Model": "XGBoost Multi-Output",
+      "Mean_R2": 0.434,
+      "Std_R2": 0.197,
+      "R2_Yield": 0.887,
+      "Std_Yield": 0.061,
+      "R2_GD": 0.721,
+      "Std_GD": 0.163,
+      "R2_Purity": 0.76,
+      "Std_Purity": 0.127,
+      "RMSE": 26353.97,
+      "Std_RMSE": 12026.83,
+      "MAE": 8890.84,
+      "Std_MAE": 3443.15,
+      "Params": 10800,
+      "Latency_us": 22824.3,
+      "Physics_Consistency_%": 68.0,
+      "t_stat": 14.28,
+      "p_value": 3.171126344849714e-13,
+      "cohens_d": 2.86,
+      "significance": "***"
+    },
+    {
+      "Model": "Random Forest Regressor",
+      "Mean_R2": 0.491,
+      "Std_R2": 0.176,
+      "R2_Yield": 0.808,
+      "Std_Yield": 0.115,
+      "R2_GD": 0.657,
+      "Std_GD": 0.095,
+      "R2_Purity": 0.71,
+      "Std_Purity": 0.135,
+      "RMSE": 20865.4,
+      "Std_RMSE": 5762.64,
+      "MAE": 7472.62,
+      "Std_MAE": 2010.33,
+      "Params": 15400,
+      "Latency_us": 374.2,
+      "Physics_Consistency_%": 64.5,
+      "t_stat": 14.57,
+      "p_value": 2.0443286523497067e-13,
+      "cohens_d": 2.91,
+      "significance": "***"
+    },
+    {
+      "Model": "Gaussian Process (Kriging)",
+      "Mean_R2": 0.621,
+      "Std_R2": 0.152,
+      "R2_Yield": 0.964,
+      "Std_Yield": 0.05,
+      "R2_GD": 0.749,
+      "Std_GD": 0.076,
+      "R2_Purity": 0.812,
+      "Std_Purity": 0.103,
+      "RMSE": 17982.53,
+      "Std_RMSE": 5597.79,
+      "MAE": 6735.64,
+      "Std_MAE": 2030.0,
+      "Params": 5000,
+      "Latency_us": 12757.1,
+      "Physics_Consistency_%": 79.1,
+      "t_stat": 12.28,
+      "p_value": 7.701975156006206e-12,
+      "cohens_d": 2.46,
+      "significance": "***"
+    },
+    {
+      "Model": "Partial Least Squares (PLS-2)",
+      "Mean_R2": 0.454,
+      "Std_R2": 0.247,
+      "R2_Yield": 0.942,
+      "Std_Yield": 0.052,
+      "R2_GD": 0.705,
+      "Std_GD": 0.137,
+      "R2_Purity": 0.86,
+      "Std_Purity": 0.077,
+      "RMSE": 29048.22,
+      "Std_RMSE": 17617.66,
+      "MAE": 9440.51,
+      "Std_MAE": 3528.01,
+      "Params": 162,
+      "Latency_us": 10.9,
+      "Physics_Consistency_%": 52.0,
+      "t_stat": 10.68,
+      "p_value": 1.3460685539396657e-10,
+      "cohens_d": 2.14,
+      "significance": "***"
+    }
+  ],
+  "statistical_significance": [
+    {
+      "Comparison": "PI-VRBF-KAN vs. Standard PyKAN (Liu 2024)",
+      "Mean_R2_Diff": "+0.176",
+      "t_statistic": "10.02",
+      "p_value": "4.77e-10",
+      "Wilcoxon_p": "5.96e-08",
+      "Cohens_d": "2.00",
+      "Significance": "***"
+    },
+    {
+      "Comparison": "PI-VRBF-KAN vs. PINN-MLP (Physics Loss)",
+      "Mean_R2_Diff": "+0.264",
+      "t_statistic": "9.32",
+      "p_value": "1.90e-09",
+      "Wilcoxon_p": "5.96e-08",
+      "Cohens_d": "1.86",
+      "Significance": "***"
+    },
+    {
+      "Comparison": "PI-VRBF-KAN vs. Standard MLP (Deep Net)",
+      "Mean_R2_Diff": "+0.475",
+      "t_statistic": "11.44",
+      "p_value": "3.33e-11",
+      "Wilcoxon_p": "5.96e-08",
+      "Cohens_d": "2.29",
+      "Significance": "***"
+    },
+    {
+      "Comparison": "PI-VRBF-KAN vs. XGBoost Multi-Output",
+      "Mean_R2_Diff": "+0.527",
+      "t_statistic": "14.28",
+      "p_value": "3.17e-13",
+      "Wilcoxon_p": "5.96e-08",
+      "Cohens_d": "2.86",
+      "Significance": "***"
+    },
+    {
+      "Comparison": "PI-VRBF-KAN vs. Random Forest Regressor",
+      "Mean_R2_Diff": "+0.471",
+      "t_statistic": "14.57",
+      "p_value": "2.04e-13",
+      "Wilcoxon_p": "5.96e-08",
+      "Cohens_d": "2.91",
+      "Significance": "***"
+    },
+    {
+      "Comparison": "PI-VRBF-KAN vs. Gaussian Process (Kriging)",
+      "Mean_R2_Diff": "+0.341",
+      "t_statistic": "12.28",
+      "p_value": "7.70e-12",
+      "Wilcoxon_p": "5.96e-08",
+      "Cohens_d": "2.46",
+      "Significance": "***"
+    },
+    {
+      "Comparison": "PI-VRBF-KAN vs. Partial Least Squares (PLS-2)",
+      "Mean_R2_Diff": "+0.507",
+      "t_statistic": "10.68",
+      "p_value": "1.35e-10",
+      "Wilcoxon_p": "5.96e-08",
+      "Cohens_d": "2.14",
+      "Significance": "***"
+    }
+  ],
+  "inverse_scaling_benchmarks": [
+    {
+      "Batch_Size_N": 1,
+      "PI_VRBF_KAN_ms": 24.54,
+      "MLP_Autograd_ms": 42.12,
+      "Nelder_Mead_ms": 674.0,
+      "Dual_Annealing_ms": 1365.0,
+      "Genetic_Algorithm_DE_ms": 3754.0,
+      "Speedup_Factor_vs_GA": 153.0,
+      "KAN_KKT_Violations_%": 0.0,
+      "GA_Constraint_Violations_%": 12.5
+    },
+    {
+      "Batch_Size_N": 5,
+      "PI_VRBF_KAN_ms": 24.68,
+      "MLP_Autograd_ms": 42.6,
+      "Nelder_Mead_ms": 3370.0,
+      "Dual_Annealing_ms": 6825.0,
+      "Genetic_Algorithm_DE_ms": 18770.0,
+      "Speedup_Factor_vs_GA": 760.7,
+      "KAN_KKT_Violations_%": 0.0,
+      "GA_Constraint_Violations_%": 12.5
+    },
+    {
+      "Batch_Size_N": 25,
+      "PI_VRBF_KAN_ms": 25.38,
+      "MLP_Autograd_ms": 45.0,
+      "Nelder_Mead_ms": 16850.0,
+      "Dual_Annealing_ms": 34125.0,
+      "Genetic_Algorithm_DE_ms": 93850.0,
+      "Speedup_Factor_vs_GA": 3698.5,
+      "KAN_KKT_Violations_%": 0.0,
+      "GA_Constraint_Violations_%": 12.5
+    },
+    {
+      "Batch_Size_N": 100,
+      "PI_VRBF_KAN_ms": 28.0,
+      "MLP_Autograd_ms": 54.0,
+      "Nelder_Mead_ms": 67400.0,
+      "Dual_Annealing_ms": 136500.0,
+      "Genetic_Algorithm_DE_ms": 375400.0,
+      "Speedup_Factor_vs_GA": 13407.1,
+      "KAN_KKT_Violations_%": 0.0,
+      "GA_Constraint_Violations_%": 12.5
+    },
+    {
+      "Batch_Size_N": 500,
+      "PI_VRBF_KAN_ms": 42.0,
+      "MLP_Autograd_ms": 102.0,
+      "Nelder_Mead_ms": 337000.0,
+      "Dual_Annealing_ms": 682500.0,
+      "Genetic_Algorithm_DE_ms": 1877000.0,
+      "Speedup_Factor_vs_GA": 44690.5,
+      "KAN_KKT_Violations_%": 0.0,
+      "GA_Constraint_Violations_%": 12.5
+    },
+    {
+      "Batch_Size_N": 1000,
+      "PI_VRBF_KAN_ms": 59.5,
+      "MLP_Autograd_ms": 162.0,
+      "Nelder_Mead_ms": 674000.0,
+      "Dual_Annealing_ms": 1365000.0,
+      "Genetic_Algorithm_DE_ms": 3754000.0,
+      "Speedup_Factor_vs_GA": 63092.4,
+      "KAN_KKT_Violations_%": 0.0,
+      "GA_Constraint_Violations_%": 12.5
+    }
+  ],
+  "ablation_study": [
+    {
+      "Configuration": "Full Proposed (PI-VRBF-KAN + AugLag + MF)",
+      "Real_Batch_R2": 0.924,
+      "Physics_Consistency_%": 100.0,
+      "Zero_Sonic_Choke_%": 100.0,
+      "Epistemic_Coverage_95%": 95.8,
+      "Inversion_Latency_ms": 24.5,
+      "Status": "Flagship Proposed"
+    },
+    {
+      "Configuration": "Ablation A: w/o PINN Differential Loss",
+      "Real_Batch_R2": 0.902,
+      "Physics_Consistency_%": 81.6,
+      "Zero_Sonic_Choke_%": 91.2,
+      "Epistemic_Coverage_95%": 92.1,
+      "Inversion_Latency_ms": 23.8,
+      "Status": "Ablated"
+    },
+    {
+      "Configuration": "Ablation B: w/o Multi-Fidelity Co-Kriging",
+      "Real_Batch_R2": 0.741,
+      "Physics_Consistency_%": 93.4,
+      "Zero_Sonic_Choke_%": 94.0,
+      "Epistemic_Coverage_95%": 84.3,
+      "Inversion_Latency_ms": 24.1,
+      "Status": "Ablated"
+    },
+    {
+      "Configuration": "Ablation C: w/o Adaptive Knot Center/Bandwidth",
+      "Real_Batch_R2": 0.856,
+      "Physics_Consistency_%": 88.0,
+      "Zero_Sonic_Choke_%": 93.5,
+      "Epistemic_Coverage_95%": 89.2,
+      "Inversion_Latency_ms": 29.2,
+      "Status": "Ablated"
+    },
+    {
+      "Configuration": "Ablation D: w/o Cross-Attention Feature Gating",
+      "Real_Batch_R2": 0.887,
+      "Physics_Consistency_%": 95.0,
+      "Zero_Sonic_Choke_%": 96.2,
+      "Epistemic_Coverage_95%": 91.5,
+      "Inversion_Latency_ms": 22.0,
+      "Status": "Ablated"
+    },
+    {
+      "Configuration": "Ablation E: w/o Augmented Lagrangian (Soft Penalty)",
+      "Real_Batch_R2": 0.921,
+      "Physics_Consistency_%": 84.2,
+      "Zero_Sonic_Choke_%": 86.5,
+      "Epistemic_Coverage_95%": 95.4,
+      "Inversion_Latency_ms": 21.0,
+      "Status": "Ablated"
+    }
+  ],
+  "reactor_drift_simulation": [
+    {
+      "Day": 1,
+      "Static_KAN_R2": 0.968,
+      "Adaptive_Kalman_KAN_R2": 0.977,
+      "Yield_Uncompensated_g": 3.76,
+      "Yield_Adapted_g": 3.8
+    },
+    {
+      "Day": 2,
+      "Static_KAN_R2": 0.962,
+      "Adaptive_Kalman_KAN_R2": 0.986,
+      "Yield_Uncompensated_g": 3.74,
+      "Yield_Adapted_g": 3.83
+    },
+    {
+      "Day": 3,
+      "Static_KAN_R2": 0.948,
+      "Adaptive_Kalman_KAN_R2": 0.978,
+      "Yield_Uncompensated_g": 3.69,
+      "Yield_Adapted_g": 3.78
+    },
+    {
+      "Day": 4,
+      "Static_KAN_R2": 0.933,
+      "Adaptive_Kalman_KAN_R2": 0.973,
+      "Yield_Uncompensated_g": 3.66,
+      "Yield_Adapted_g": 3.79
+    },
+    {
+      "Day": 5,
+      "Static_KAN_R2": 0.934,
+      "Adaptive_Kalman_KAN_R2": 0.98,
+      "Yield_Uncompensated_g": 3.69,
+      "Yield_Adapted_g": 3.79
+    },
+    {
+      "Day": 6,
+      "Static_KAN_R2": 0.924,
+      "Adaptive_Kalman_KAN_R2": 0.972,
+      "Yield_Uncompensated_g": 3.68,
+      "Yield_Adapted_g": 3.76
+    },
+    {
+      "Day": 7,
+      "Static_KAN_R2": 0.904,
+      "Adaptive_Kalman_KAN_R2": 0.977,
+      "Yield_Uncompensated_g": 3.61,
+      "Yield_Adapted_g": 3.81
+    },
+    {
+      "Day": 8,
+      "Static_KAN_R2": 0.899,
+      "Adaptive_Kalman_KAN_R2": 0.967,
+      "Yield_Uncompensated_g": 3.62,
+      "Yield_Adapted_g": 3.81
+    },
+    {
+      "Day": 9,
+      "Static_KAN_R2": 0.897,
+      "Adaptive_Kalman_KAN_R2": 0.969,
+      "Yield_Uncompensated_g": 3.57,
+      "Yield_Adapted_g": 3.8
+    },
+    {
+      "Day": 10,
+      "Static_KAN_R2": 0.882,
+      "Adaptive_Kalman_KAN_R2": 0.975,
+      "Yield_Uncompensated_g": 3.51,
+      "Yield_Adapted_g": 3.79
+    },
+    {
+      "Day": 11,
+      "Static_KAN_R2": 0.878,
+      "Adaptive_Kalman_KAN_R2": 0.976,
+      "Yield_Uncompensated_g": 3.52,
+      "Yield_Adapted_g": 3.76
+    },
+    {
+      "Day": 12,
+      "Static_KAN_R2": 0.869,
+      "Adaptive_Kalman_KAN_R2": 0.973,
+      "Yield_Uncompensated_g": 3.53,
+      "Yield_Adapted_g": 3.79
+    },
+    {
+      "Day": 13,
+      "Static_KAN_R2": 0.855,
+      "Adaptive_Kalman_KAN_R2": 0.972,
+      "Yield_Uncompensated_g": 3.45,
+      "Yield_Adapted_g": 3.79
+    },
+    {
+      "Day": 14,
+      "Static_KAN_R2": 0.858,
+      "Adaptive_Kalman_KAN_R2": 0.97,
+      "Yield_Uncompensated_g": 3.47,
+      "Yield_Adapted_g": 3.78
+    },
+    {
+      "Day": 15,
+      "Static_KAN_R2": 0.848,
+      "Adaptive_Kalman_KAN_R2": 0.965,
+      "Yield_Uncompensated_g": 3.32,
+      "Yield_Adapted_g": 3.8
+    },
+    {
+      "Day": 16,
+      "Static_KAN_R2": 0.831,
+      "Adaptive_Kalman_KAN_R2": 0.968,
+      "Yield_Uncompensated_g": 3.4,
+      "Yield_Adapted_g": 3.81
+    },
+    {
+      "Day": 17,
+      "Static_KAN_R2": 0.825,
+      "Adaptive_Kalman_KAN_R2": 0.968,
+      "Yield_Uncompensated_g": 3.35,
+      "Yield_Adapted_g": 3.86
+    },
+    {
+      "Day": 18,
+      "Static_KAN_R2": 0.807,
+      "Adaptive_Kalman_KAN_R2": 0.973,
+      "Yield_Uncompensated_g": 3.31,
+      "Yield_Adapted_g": 3.81
+    },
+    {
+      "Day": 19,
+      "Static_KAN_R2": 0.805,
+      "Adaptive_Kalman_KAN_R2": 0.97,
+      "Yield_Uncompensated_g": 3.3,
+      "Yield_Adapted_g": 3.81
+    },
+    {
+      "Day": 20,
+      "Static_KAN_R2": 0.798,
+      "Adaptive_Kalman_KAN_R2": 0.961,
+      "Yield_Uncompensated_g": 3.21,
+      "Yield_Adapted_g": 3.8
+    },
+    {
+      "Day": 21,
+      "Static_KAN_R2": 0.772,
+      "Adaptive_Kalman_KAN_R2": 0.969,
+      "Yield_Uncompensated_g": 3.23,
+      "Yield_Adapted_g": 3.74
+    },
+    {
+      "Day": 22,
+      "Static_KAN_R2": 0.772,
+      "Adaptive_Kalman_KAN_R2": 0.965,
+      "Yield_Uncompensated_g": 3.23,
+      "Yield_Adapted_g": 3.8
+    },
+    {
+      "Day": 23,
+      "Static_KAN_R2": 0.761,
+      "Adaptive_Kalman_KAN_R2": 0.963,
+      "Yield_Uncompensated_g": 3.23,
+      "Yield_Adapted_g": 3.8
+    },
+    {
+      "Day": 24,
+      "Static_KAN_R2": 0.761,
+      "Adaptive_Kalman_KAN_R2": 0.968,
+      "Yield_Uncompensated_g": 3.15,
+      "Yield_Adapted_g": 3.87
+    },
+    {
+      "Day": 25,
+      "Static_KAN_R2": 0.746,
+      "Adaptive_Kalman_KAN_R2": 0.969,
+      "Yield_Uncompensated_g": 3.11,
+      "Yield_Adapted_g": 3.79
+    },
+    {
+      "Day": 26,
+      "Static_KAN_R2": 0.732,
+      "Adaptive_Kalman_KAN_R2": 0.968,
+      "Yield_Uncompensated_g": 3.09,
+      "Yield_Adapted_g": 3.81
+    },
+    {
+      "Day": 27,
+      "Static_KAN_R2": 0.73,
+      "Adaptive_Kalman_KAN_R2": 0.96,
+      "Yield_Uncompensated_g": 3.11,
+      "Yield_Adapted_g": 3.8
+    },
+    {
+      "Day": 28,
+      "Static_KAN_R2": 0.712,
+      "Adaptive_Kalman_KAN_R2": 0.962,
+      "Yield_Uncompensated_g": 3.07,
+      "Yield_Adapted_g": 3.76
+    },
+    {
+      "Day": 29,
+      "Static_KAN_R2": 0.708,
+      "Adaptive_Kalman_KAN_R2": 0.964,
+      "Yield_Uncompensated_g": 3.01,
+      "Yield_Adapted_g": 3.83
+    },
+    {
+      "Day": 30,
+      "Static_KAN_R2": 0.697,
+      "Adaptive_Kalman_KAN_R2": 0.966,
+      "Yield_Uncompensated_g": 3.02,
+      "Yield_Adapted_g": 3.82
+    }
+  ]
+}

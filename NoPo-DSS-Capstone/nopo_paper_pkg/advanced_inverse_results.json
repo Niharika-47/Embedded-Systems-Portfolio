@@ -1,0 +1,121 @@
+{
+  "Inverse_Solution": {
+    "status": "success",
+    "optimal_recipe": {
+      "P_CO_atm": {
+        "recommended_setpoint": 72.17,
+        "uncertainty_std": 21.69,
+        "tolerance_interval_95": [
+          62.67,
+          81.68
+        ],
+        "tolerance_string": "72.2 \u00b1 9.5 atm",
+        "bounds": [
+          10.0,
+          90.0
+        ]
+      },
+      "T_rxn_mean_C": {
+        "recommended_setpoint": 1020.02,
+        "uncertainty_std": 105.54,
+        "tolerance_interval_95": [
+          973.76,
+          1066.27
+        ],
+        "tolerance_string": "1020.0 \u00b1 46.3 \u00b0C",
+        "bounds": [
+          800.0,
+          1150.0
+        ]
+      },
+      "T_spread_C": {
+        "recommended_setpoint": 16.21,
+        "uncertainty_std": 18.8,
+        "tolerance_interval_95": [
+          7.98,
+          24.45
+        ],
+        "tolerance_string": "16.2 \u00b1 8.2 \u00b0C",
+        "bounds": [
+          0.0,
+          80.0
+        ]
+      },
+      "Flow_CO_SLPM": {
+        "recommended_setpoint": 249.33,
+        "uncertainty_std": 238.79,
+        "tolerance_interval_95": [
+          144.68,
+          353.98
+        ],
+        "tolerance_string": "249.3 \u00b1 104.7 SLPM",
+        "bounds": [
+          100.0,
+          1000.0
+        ]
+      },
+      "Flow_Fe_Precursor_SLPM": {
+        "recommended_setpoint": 241.56,
+        "uncertainty_std": 90.49,
+        "tolerance_interval_95": [
+          201.9,
+          281.22
+        ],
+        "tolerance_string": "241.6 \u00b1 39.7 SLPM",
+        "bounds": [
+          10.0,
+          350.0
+        ]
+      },
+      "H2O_Flow_ppmv": {
+        "recommended_setpoint": 6.06,
+        "uncertainty_std": 11.75,
+        "tolerance_interval_95": [
+          0.91,
+          11.21
+        ],
+        "tolerance_string": "6.1 \u00b1 5.2 SLPM",
+        "bounds": [
+          1.0,
+          50.0
+        ]
+      },
+      "Zone_SP_Dev_C": {
+        "recommended_setpoint": -18.48,
+        "uncertainty_std": 15.23,
+        "tolerance_interval_95": [
+          -25.16,
+          -11.81
+        ],
+        "tolerance_string": "-18.5 \u00b1 6.7 \u00b0C",
+        "bounds": [
+          -35.0,
+          15.0
+        ]
+      }
+    },
+    "convergence_loss": 0.8123,
+    "n_seeds_evaluated": 20,
+    "epistemic_uncertainty_norm": NaN,
+    "mahalanobis_ood_distance": 30.44,
+    "is_within_safe_envelope": false
+  },
+  "Noise_Stress_Test_Results": {
+    "Noise_1.0%": {
+      "mean_degradation_GD": 0.6272732615470886,
+      "mean_degradation_Yield": 0.06912969797849655
+    },
+    "Noise_2.0%": {
+      "mean_degradation_GD": 1.2070794105529785,
+      "mean_degradation_Yield": 0.12174805998802185
+    },
+    "Noise_5.0%": {
+      "mean_degradation_GD": 2.8620522022247314,
+      "mean_degradation_Yield": 0.261811763048172
+    },
+    "Noise_10.0%": {
+      "mean_degradation_GD": 4.65521240234375,
+      "mean_degradation_Yield": 0.46091321110725403
+    }
+  }
+}
